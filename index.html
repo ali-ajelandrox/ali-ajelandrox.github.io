@@ -1,45 +1,307 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Curriculum Ali Andrade</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a58a03a8d4.js" crossorigin="anonymous"></script>
+    <title>CV Ali Andrade</title>
 </head>
-<body>
-     <h1>Curriculum Vitale</h1>
-     <img src="./imagenes/ali_perfil.jpeg" alt="foto de Ali Andrade" width="150" height="180">
 
-    <h2>
-        Nombre: Ali Andrade
-    </h2>
-    <h2>
-        Datos personales
-    </h2>
-    <ul>
-        <li> <b>Nombre completo : </b>  Ali Alejandro Andrade Godoy</li>
-        <li> <b>Nacimiento:</b> 27/05/1995 </li>
-        <li> <b>Residencia</b>: Santiago</li>
-        <li><b>Numero de contacto:</b> +56 978 771 599</li>
-    </ul>
-    <h2>
-        Resumen: 
-    </h2>
-    <p>
-       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed temæpore iure vitae explicabo quia dolorem provident, dicta, voluptatum nesciunt error obcaecati facilis voluptatibus reiciendis cum omnis ad rem voluptates fuga?
+<body class="body">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <h1 class="nombre">
+                    Ali Andrade
+                </h1>
+                <button class="navbar-toggler" type="button " data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0 align-items-right " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
 
-    </p>
-    <h2>Formacion:</h2>
-    <ol>
-        <li><b>Bachiller en ciencias :</b> U.E Anzoategui</li>
-        <li><b>Curso de reparacion de componentes electronicos:</b> IPSM: Santiago Mariño </li>
-        <li><b>Curso de ingles nivel basico: </b> Academia Americana
-        </li>
-    </ol>
+        <section >
+            <img src="./assets/img/ali_perfil.jpeg" class="rounded mx-auto d-block m-4 p-4 " style="height: 40em; width: 30em;" alt="imagen de perfil Ali andrade">
 
-    <h3>Conoce mi Trabajo a traves de :<a href="./portafolio.html" target="_blank"> Mi portafolio </a></h3>
-    
+        </section>
 
-    
+
+
+        <section class="datos-personales">
+            <h1>
+                Ali Alejandro Andrade Godoy
+            </h1>
+             <h3>
+                <ul>Nacimiento: 27/05/1995</ul>
+                <ul>Edad: 28 años</ul>
+                <ul>Rut: 27225149-5</ul>
+                <ul>Fono: +56978771599</ul>
+             </h3>
+        </section>
+
+
+
+
+        <section>
+        <div class="card-group gap-4 p-4">
+            <div class="card">
+             <h5 class="card-title text-center mt-3">Educacion</h5>
+              <div class="card-body">
+                <p class="card-text">
+                    <ol class="card-text">
+                        <li>
+                            Bachiller en ciencias :  U.E Anzoategui.
+                        </li>
+
+                        <li> Curso de reparacion de componentes electronicos: IPSM, Santiago Mariño</li>
+
+                        <li>Curso de ingles nivel basico: Academia Americana</li>
+                    </ol>
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+                
+              <div class="card-body gap-4 p-4">
+                <h5 class="card-title text-center">Experiencia</h5>
+                <p class="card-text"><ol class="card-text">
+                    <li>HTML: para creacion de estrucuturas web </li>
+                    <li>Css: estilizar web</li>
+                    <li>Bootstrap: para una buena arquitectura web responcive</li>
+                    <li>Git y Github: para trabajar de manera remota y continua con nuestros colegas </li>
+                </ol></p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="portafolio text-center">
+        <h2 class="portafolio" style="font-size: 50px;">
+         Portafolio
+        </h2>
+    </section>       
+
+
+        <section>
+            <div class="card-group gap-4 p-4 ">
+                <div class="card ">
+                    <img src="./assets/img/desafio-1.png" class="card-img-top card-img-top img-fluid"
+                        alt="desafio 1 cv en html">
+                    <div class="card-body">
+                        <h5 class="card-title">CV En HTML</h5>
+                        <p class="card-text">Trabajo en un curriculum vitale para en tender la estrucutura basica de sitio web
+                        </p>
+                        <p class="card-text">Herramientas : <ul class="card-text">
+                            <li>
+                                HTML
+                            </li>
+                            <li>
+                                Navegador
+                            </li >
+                            <li>
+                                VS Code
+                            </li>
+
+                        </ul></p>
+                        
+                    </div>
+                    <div class="card-footer d-flex gap-3 justify-content-center">
+                        <p class="card-text">
+                            <a href="./assets/Routes/Ali_andrade/curriculum vitale/index.html" style="color: #28282B; font-weight: bolder; font-size: 20px;">Visitar</a>  
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="card ">
+                    <img src="./assets/img/desafio-2.PNG" class="card-img-top card-img-top img-fluid"
+                        alt="Desafio 2 page de productos">
+                    <div class="card-body">
+                        <h5 class="card-title">Css Basico corresponde a page de venta</h5>
+                        <p class="card-text">En este proyecto podemos se entiende el uso y la implementacion de css como recurso para la etilizacion de las paginas web para una 
+                            experiencia de usuario mas agradable y el recurso de tablas en HTML
+                        </p>
+                        <p class="card-text">Herramientas:
+                            <ul class="card-text">
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>Navegador</li>
+                                <li>
+                                    VS Code
+                                </li>
+                            </ul>
+                        </p>
+                     
+
+                    </div>
+                    <div class="card-footer d-flex gap-3 justify-content-center">
+                        <p class="card-text">
+                            <a href="#" style="color: #28282B; font-weight: bolder; font-size: 20px;">Visitar</a>  
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/desafio-3.PNG" class="card-img-top img-fluid" alt="pagina biografica">
+                    <div class="card-body">
+                        <h5 class="card-title">Pagina Documental</h5>
+                        <p class="card-text">En este proyecto veremos como se implementa el uso
+                            de FLEX en css nuevos estilos de diseños importados desde una pagina externa y fima como ejemplo de maqueta web.
+                        </p>
+                        <p class="card-text">
+                            Herramientas:
+                            <ul class="card-text">
+                                
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>Navegador</li>
+                                <li>
+                                    VS Code
+                                </li>
+                                <li>
+                                    Figma
+                                </li>
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex gap-3 justify-content-center">
+                        <p class="card-text">
+                            <a href="#" style="color: #28282B; font-weight: bolder; font-size: 20px;">Visitar</a>  
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <section>
+                <div class="card-group gap-4 p-4">
+                    <div class="card">
+                        <img src="./assets/img/desafio-4.PNG" class="card-img-top img-fluid"
+                            alt="desafio correspondiente a bootstrap ">
+                        <div class="card-body">
+                            <h5 class="card-title">Pagina de Bootstrap</h5>
+                            <p class="card-text">En estre proyecto se aprecia la implementacion de bootstrap para la maquetacion y el estilo web</p>
+                            <p class="card-text">
+                                Herramientas:
+                                <ul class="card-text">
+                                    
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Navegador</li>
+                                    <li>
+                                        VS Code
+                                    </li>
+                                    <li>
+                                        Figma
+                                    </li>
+                                    <li>
+                                        Bootstrap
+                                    </li>
+                            </p>
+
+                        </div>
+                        <div class="card-footer d-flex gap-3 justify-content-center">
+                            <p class="card-text">
+                                <a href="#" style="color: #28282B; font-weight: bolder; font-size: 20px;">Visitar</a>  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <img src="./assets/img/desafio-5.PNG" class="card-img-top img-fluid"
+                            alt="imagen de terminal de github">
+                        <div class="card-body">
+                            <h5 class="card-title">Terminal Git y Github</h5>
+                            <p class="card-text">En esta imagen se representa la herramienta de terminal de git y asociada a la github es la herrmienta que uso para lograr 
+                                comunicacion en los trabajos , junto con colegas y compañeros de Trabajo,
+                            </p>
+                           
+
+                        </div>
+                    
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/Desafio-6.a.png" class="card-img-top img-fluid" alt="paisaje valdivia"
+                            style="width: 100%; height: 100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto en el que nos encontramos actualmente
+                            </h5>
+                            <p class="card-text">En este proyecto aplicamos todos los conocimientos implementados en los proyectos anteriormente presentados 
+                                exponiendo asi la experiencia y conocimientos adquiridos
+                            </p>
+
+                        </div>
+                        <div class="card-footer d-flex gap-3 justify-content-center">
+                            <p class="card-text">
+                                <a href="#" style="color: #28282B; font-weight: bolder; font-size: 20px;">Visitar</a>  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+    </main>
+    <section class="formulario">
+        <form>
+            <h2 class="text-center p-4 ">Contacto ingresando tus datos </h2>
+            <div class="mb-3 d-flex justify-content-center">
+                <label for="exampleInputPassword1" class="form-label"> </label>
+                <input type="text" class="form-control   " id="exampleInputPassword1 " placeholder="Nombre"
+                    style="height: 50px; width: 90%;">
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Email" style="height: 50px; width: 90%;">
+
+            </div>
+            <div class="d-flex justify-content-center p-4">
+                <button type="submit" class="btn btn-light ">
+                    <h5>Enviar</h5>
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+
 </body>
+<footer>
+    <div class="d-flex justify-content-center mt-3 bg-black" >
+        <p> 2023 Ali Andrade .Estudiante Fullstack.</p>
+    </div>
+</footer>
+
 </html>

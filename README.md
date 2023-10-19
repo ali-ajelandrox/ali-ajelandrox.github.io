@@ -1,1 +1,0 @@
-# ali-ajelandrox.github.io

@@ -1,0 +1,62 @@
+.body{
+    background-color: #28282B ;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    color: #fff ;
+}
+
+header .nav-link{
+    color: #fff;
+    
+}
+
+.container-fluid h1{
+    color: orange;
+    padding-left: 5%;
+}
+
+
+.card-group{
+    font-family: 'Roboto', sans-serif;
+}
+.portafolio{
+    background-color: #FF8C00;
+}
+.card-group .card-text{
+   
+   
+    font-weight: lighter;
+    color: #707070;
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    
+}
+
+.formulario{
+    color: #fff;
+    font-weight: medium;
+}
+
+footer{
+    color: #707070;
+    font-size: 15px;
+
+}
+
+.datos-personales{
+    background-color: #FF8C00;
+    background-color: ff963e;
+    text-align: center;
+
+}
+
+.card-group .card-footer{
+    background-color: #FF8C00;
+}
