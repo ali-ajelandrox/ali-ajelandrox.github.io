@@ -1,0 +1,127 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;
+}
+
+
+header{
+
+height: 100px;
+}
+
+.iguanabg{
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    padding: 10px;
+
+}
+
+.sinopsis{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+.texto-sinopsis{
+    font-size: 20px;
+    width: 550px;
+    display: grid;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+.image-sinopsis{
+    padding-right: 150px;
+    justify-content: center;
+    height: 320px;
+    width: 320px;
+    
+    
+}
+.image-sinopsis img{
+    height: 100%;
+}
+
+.caracteristicas{
+    height: 120px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #1E1A13;
+    color: #ffffff;
+}
+
+.iconos{
+    display:flex;
+
+    justify-content: center;
+    font-size: 80px;
+    flex-wrap: wrap;
+    
+    background-color: #1E1A13;
+    
+    
+}
+
+.iconos .tex-iconos{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 55px;
+    gap: 200px;
+    color: #ffffff;
+
+    
+
+}
+
+.iconos .icon-img{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    color: #ffffff;
+}
+
+
+.varias-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%px;
+  height: 300px;
+  padding: 20px;
+  gap: 100px;
+  margin: 0;
+  background-color: black;
+
+
+
+}
+
+
+.varias-img .iguana3 img{
+    height: 240px;
+    width: 350px;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    text-align: center;
+    font-weight: lighter;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #1E1A13;
+    color: #ffffff;
+}
+

@@ -1,0 +1,42 @@
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    color: #fff ;
+}
+
+header .nav-link{
+    color: #fff;
+    
+}
+
+
+.card-group{
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-group .card-text{
+    
+    font-weight: lighter;
+    color: #707070;
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    
+}
+
+.formulario{
+    color: #fff;
+    font-weight: medium;
+}
+
+footer{
+    color: #707070;
+    font-size: 15px;
+
+}
