@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #bdc3c7;  /* Fondo con gradiente */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);  /* Estilo de gradiente */
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Blanco para títulos */
+    font-weight: bold;
+    animation: fadeIn 2s;
+}
+.project {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+}
+.card {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+}
+.card-body {
+    padding: 20px;
+}
+.card-title {
+    color: #007bff; /* Azul para títulos de proyecto */
+    font-weight: bold;
+}
+.card-text {
+    color: #343a40; /* Texto oscuro para descripción */
+}
+.project-link {
+    text-decoration: none;
+    color: #007bff; /* Azul para enlaces */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+.project-link:hover {
+    color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.profile-header h1 {
+    animation: slideInLeft 1.5s;
+    color: #ffffff; /* Blanco para el nombre */
+    font-weight: bold;
+}
+.profile-header p {
+    color: #f8f9fa; /* Gris claro para el texto */
+    font-style: italic;
+}
+.aside {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Asegura que esté sobre el contenido */
+}
+.aside a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra */
+}
+.aside a img:hover {
+    transform: scale(1.2);
+}
