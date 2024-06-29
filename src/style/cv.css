@@ -96,7 +96,6 @@ img{
     width: 30px;
     height: 30px;
     transition: transform 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra */
 }
 .aside a img:hover {
     transform: scale(1.2);

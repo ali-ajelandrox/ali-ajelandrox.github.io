@@ -895,7 +895,7 @@ button:active>svg>path {
 
     .title-cv-container {
         position: absolute;
-        width: 398px;
+        width: 98%;
         z-index: 2;
         margin: 2vh 0vh 83vh 1vh;
         display: flex;
@@ -903,7 +903,7 @@ button:active>svg>path {
     }
 
     .cv-title {
-        font-size: 4.2vh;
+        font-size: 262%;
         text-shadow: 4px 0cap 2px white;
         display: block;
         font-family: monospace;
@@ -943,7 +943,6 @@ button:active>svg>path {
         position: absolute;
         z-index: 1;
         margin: 188vh 0vh 50vh 13vh;
-        background-color:  #ff00cc;
         border-radius: 5px 100px 5px 76px;
         overflow: hidden;
         box-shadow: 13px -11px 18px 0px rgba(0, 0, 0, 0.75);
