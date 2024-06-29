@@ -716,7 +716,7 @@ button:active>svg>path {
     
     .title-cv-container {
         position: absolute;
-        width: 499px;
+        width: 100%;
         z-index: 2;
         margin: 0vh 0vh 82vh 0vh;
         display: flex;
@@ -724,7 +724,7 @@ button:active>svg>path {
     }
     
     .cv-title {
-        font-size: 5.2vh;
+        font-size:236%;
         text-shadow: 4px 0cap 2px white;
         display: block;
         font-family: monospace;
@@ -758,7 +758,7 @@ button:active>svg>path {
     
     .welcome-msg {
         position: absolute;
-        width: 469px;
+        width: 100%;
         z-index: 1;
         margin: 0vh 0vh 3vh 14vh;
     }
