@@ -162,7 +162,7 @@ background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, F
 .typewriter h2 {
     display: inline-block; /* Mantiene el texto en una sola línea */
     animation: typing 4s steps(40, end) forwards; /* Duración del efecto de escritura */
-    font-size: 4.2vw; /* Ajuste responsivo con 'vw' */
+    font-size: 4vw; /* Ajuste responsivo con 'vw' */
     white-space: nowrap;
     overflow: hidden;
 }
