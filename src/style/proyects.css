@@ -1,56 +1,92 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: #bdc3c7;  /* Fondo con gradiente */
-    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);  /* Estilo de gradiente */
-    color: #343a40;
+body { 
+    font-family: 'Roboto', sans-serif; /* Tipografía más profesional */
+    background: #f3f4f7; /* Fondo más claro */
+    color: #2c3e50;
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s;
 }
+
+body:hover {
+    background-color: #e0eafc; /* Cambio de color de fondo al pasar el ratón */
+}
+
+
 .section-title {
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #ffffff; /* Blanco para títulos */
+    color:#343a40;
     font-weight: bold;
+    background-color: #007bff; /* Fondo azul para los títulos */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
     animation: fadeIn 2s;
 }
+
 .project {
     margin-bottom: 20px;
     animation: fadeInUp 1s;
 }
+
 .card {
     background-color: #ffffff; /* Fondo blanco */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
-    transition: transform 0.3s;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
-    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+    transform: translateY(-10px); /* Efecto de levantamiento más visible */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Sombra más fuerte al pasar el ratón */
 }
+
 .card-body {
-    padding: 20px;
+    padding: 25px;
 }
+
 .card-title {
     color: #007bff; /* Azul para títulos de proyecto */
     font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    position: relative;
 }
+
+.card-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
 .card-text {
     color: #343a40; /* Texto oscuro para descripción */
+    line-height: 1.6;
 }
+
 .project-link {
     text-decoration: none;
     color: #007bff; /* Azul para enlaces */
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
+    font-size: 1.1em;
 }
+
 .project-link:hover {
     color: #0056b3; /* Azul más oscuro al pasar el ratón */
     transform: scale(1.1);
 }
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -61,6 +97,7 @@ body {
         transform: translateY(0);
     }
 }
+
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -71,15 +108,24 @@ body {
         transform: translateX(0);
     }
 }
+
 .profile-header h1 {
     animation: slideInLeft 1.5s;
     color: #ffffff; /* Blanco para el nombre */
     font-weight: bold;
+    font-size: 2.8em; /* Más grande para destacar el nombre */
+    background-color: #007bff; /* Fondo azul para mayor impacto */
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
 }
+
 .profile-header p {
     color: #f8f9fa; /* Gris claro para el texto */
     font-style: italic;
+    font-size: 1.2em;
 }
+
 .aside {
     position: fixed;
     left: 10px;
@@ -90,11 +136,15 @@ body {
     gap: 10px;
     z-index: 1000; /* Asegura que esté sobre el contenido */
 }
+
 .aside a img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
+    width: 50px; /* Tamaño mayor para destacar los iconos */
+    height: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    
 }
+
 .aside a img:hover {
     transform: scale(1.2);
 }

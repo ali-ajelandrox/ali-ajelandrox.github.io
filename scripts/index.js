@@ -31,3 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyAnimation('.aside .img-button');
 });
+
+
+    // Scroll automático hacia abajo
+    const scrollToBottom = () => {
+        window.scrollBy(0, 1); // Desplazamiento hacia abajo en píxeles
+        if ((window.innerHeight + window.scrollY) < document.body.offsetHeight) {
+            requestAnimationFrame(scrollToBottom); // Continúa el scroll
+        }
+    };
+
+    window.onload = () => {
+        scrollToBottom(); // Inicia el scroll automático al cargar la página
+    };
+
