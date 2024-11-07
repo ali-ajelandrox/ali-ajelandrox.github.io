@@ -178,3 +178,156 @@ a:hover {
 
 /* Opcional: Añadir tipografía Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+.view-certificates-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-certificates-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Estilos del contenedor de cursos */
+.courses {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin: 0;
+}
+
+.view-certificates-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-certificates-btn:hover {
+    background-color: #45a049;
+}
+
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses-table th,
+.courses-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.courses-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.courses-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con 60% de opacidad */
+    overflow: auto;
+}
+
+/* Contenido del modal */
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    max-width: 80%;
+    background-color: rgba(249, 249, 249, 0.349); /* Fondo blanco con transparencia */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Galería de diplomas */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del modal para PDFs o imágenes */
+#fileModal .modal-content {
+    max-width: 90%;
+    height: 90%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajustes del visor PDF */
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/* Ajustes del visor de imagen */
+#imageViewer {
+    display: none;
+    max-width: 100%;
+    max-height: 90vh; /* Limita la altura máxima para evitar desbordes */
+    object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 8px; /* Bordes redondeados para un mejor diseño */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+

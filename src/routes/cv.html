@@ -116,11 +116,66 @@
                 </div>
 
                 <div class="courses">
-                    <h2 class="section-title">Cursos</h2>
-                    <p><strong>Master en webs Full Stack:</strong> Angular, Node, Laravel, Symfony + Programación API’S
-                        Rest Full: HTML, CSS, Angular, React-Vite, JavaScript, MySQL</p>
-                    <p><strong>Desafío Latam:</strong> Desarrollo Full Stack JavaScript</p>
+                    <div class="courses-header">
+                        <h2 class="section-title">Cursos</h2>
+                        <button class="view-certificates-btn" onclick="openModal()">Ver Diplomas</button>
+                    </div>
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>Curso</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Master en webs Full Stack</td>
+                                <td>Angular, Node, Laravel, Symfony + Programación API’S Rest Full: HTML, CSS, Angular, React-Vite, JavaScript, MySQL</td>
+                            </tr>
+                            <tr>
+                                <td>Desafío Latam</td>
+                                <td>Desarrollo Full Stack JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td>  <strong>IFCT091PO (SEPE) </strong>  PROGRAMACIÓN PÁGINAS WEB JAVASCRIPT Y PHP</td>
+                                <td> PROGRAMACIÓN CLIENTE,
+                                     PROGRAMACIÓN SERVIDOR,
+                                     BASE DE DATOS. </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+                
+                <!-- Modal para mostrar la galería de diplomas -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Galería de Diplomas</h2>
+                        <div class="gallery">
+                            <!-- Cada imagen se vincula a un archivo (PDF o imagen) -->
+                            <img src="/src/PDF/iweb.png" alt="Diploma 1" onclick="openFile('/src/PDF/iweb.png')">
+                            <img src="/src/PDF/css.png" alt="Diploma 2" onclick="openFile('/src/PDF/css.png')">
+                            <img src="/src/PDF/js.png" alt="Diploma 3" onclick="openFile('/src/PDF/js.png')">
+                            <img src="/src/PDF/react.png" alt="Diploma 4" onclick="openFile('/src/PDF/react.png')">
+                            <img src="/src/PDF/diplomasepe1.png" alt="Diploma 4" onclick="openFile('/src/PDF/Diploma-ALI_ALEJANDRO_ANDRADE_GODOY.pdf')">
+                            <!-- Añadir más imágenes aquí -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal para ver el PDF o la imagen -->
+                <div id="fileModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeFileModal()">&times;</span>
+                        <!-- Contenedor para PDF -->
+                        <embed id="pdfViewer" type="application/pdf" width="100%" height="600px" style="display: none;">
+                        <!-- Contenedor para Imagen -->
+                        <img id="imageViewer" src="" alt="Visualización de Diploma" style="display: none; max-width: 100%; max-height: 600px;">
+                    </div>
+                </div>
+                
+                
+                
             </div>
         </div>
     </div>
@@ -139,7 +194,7 @@
             <img class="img-button4" src="/src/img/watsapp.png" alt="WhatsApp">
         </a>
     </div>
-
+    <script src="/scripts/modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

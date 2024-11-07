@@ -112,33 +112,6 @@
     </div>
     <!-- Closing div for area -->
     <script src="./scripts/index.js"></script>
-    <script>
-        // Variable para controlar si el scroll automático está activo o no
-        let autoScrollActive = true;
-
-        // Función de scroll automático hacia abajo
-        const scrollToBottom = () => {
-            if (autoScrollActive) {
-                window.scrollBy(0, 1); // Desplazamiento hacia abajo en píxeles
-                if ((window.innerHeight + window.scrollY) < document.body.offsetHeight) {
-                    requestAnimationFrame(scrollToBottom); // Continúa el scroll si no ha llegado al final
-                }
-            }
-        };
-
-        // Inicia el scroll automático al cargar la página
-        window.onload = () => {
-            scrollToBottom(); // Inicia el scroll automático al cargar la página
-        };
-
-        // Detiene el scroll automático cuando el usuario hace clic en la página
-        window.addEventListener('click', () => {
-            autoScrollActive = false; // Desactiva el scroll automático
-        });
-
-
-
-    </script>
 </body>
 
 </html>
